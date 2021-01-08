@@ -9,7 +9,7 @@
         $cnn = new ConexionBD();
         $con = $cnn->conectaBD();
 
-        $sttmt = $con->prepare("SELECT * FROM users ORDER BY id");
+        $sttmt = $con->prepare("SELECT * FROM users ORDER BY id_user");
         $sttmt->execute();
 
         $rowCount = $sttmt->rowCount();
